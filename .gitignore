@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+package-lock.json
+package.json
+src/assets/cv.pdf
+src/assets/me1.png
+src/components/nav/Nav.jsx
