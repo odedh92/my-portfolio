@@ -10,7 +10,7 @@ const Portfolio = () => {
   return (
     <section id="portfolio">
       <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      <h2>Top Portfolio</h2>
 
       <div className="container portfolio__container">
         <article className="portfolio__item">
@@ -18,7 +18,7 @@ const Portfolio = () => {
             <div className="portfolio__item-image">
               <img src={IMG1} alt="" />
             </div>
-            <h3>This is a Portfolio Item </h3>
+            <h3>Posts Project</h3>
              <div className="portfolio__item-cta">
             <a href="https://github.com/odedh92/Posts-Project" className="btn">Github</a>
             <a href="https://twitter.com/" className="btn btn-primary">Live Demo</a>
@@ -30,9 +30,9 @@ const Portfolio = () => {
             <div className="portfolio__item-image">
               <img src={IMG2} alt="" />
             </div> 
-            <h3>This is a Portfolio Item </h3>
+            <h3>Apparty App</h3>
             <div className="portfolio__item-cta">
-            <a href="https://github.com/odedh92/Posts-Project" className="btn">Github</a>
+            <a href="https://github.com/odedh92/AppartyApp" className="btn">Github</a>
             <a href="https://twitter.com/" className="btn btn-primary">Live Demo</a>
             </div>
           </div>
@@ -42,14 +42,14 @@ const Portfolio = () => {
             <div className="portfolio__item-image">
               <img src={IMG3} alt="" />
             </div>
-            <h3>This is a Portfolio Item </h3>
+            <h3>Weather</h3>
             <div className="portfolio__item-cta">
             <a href="https://github.com/odedh92/Posts-Project" className="btn">Github</a>
             <a href="https://twitter.com/" className="btn btn-primary">Live Demo</a>
             </div>
           </div>
         </article>
-        <article className="portfolio__item">
+        {/* <article className="portfolio__item">
           <div className="portfolio__item-image">
             <div className="portfolio__item-image">
               <img src={IMG4} alt="" />
@@ -84,7 +84,7 @@ const Portfolio = () => {
             <a href="https://twitter.com/" className="btn btn-primary">Live Demo</a>
             </div>
           </div>
-        </article>
+        </article> */}
       </div>
     </section>
   );
