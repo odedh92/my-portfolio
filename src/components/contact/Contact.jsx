@@ -3,7 +3,6 @@ import emailjs from '@emailjs/browser';
 import "./contact.css";
 import { MdOutlineMailOutline } from "react-icons/md"; 
 import { ImWhatsapp } from "react-icons/im"; 
-import { LiaFacebookMessenger } from "react-icons/lia"; 
 
 const Contact = () => {
   const form = useRef();
@@ -11,6 +10,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs.sendForm('service_80b0zf8', 'template_a6a43nu', form.current, 'DeOm_w2xXCL82nG26')
+    alert('Message sent')
     e.target.reset()
   }
   return (
@@ -24,12 +24,6 @@ const Contact = () => {
             <h4>Email</h4>
             <h5>odedh92@gmail.com</h5>
             <a href="mailto:odedh92@gmail.com" target="_blank" rel="noreferrer">Send a email</a>
-          </article>
-          <article className="contact__option">
-            <LiaFacebookMessenger className="contact__option-icon"/>
-            <h4>Massenger</h4>
-            <h5>Massge me</h5>
-            <a href="https://m.me/oded.haina" target="_blank" rel="noreferrer">Send a message</a>
           </article>
           <article className="contact__option">
             <ImWhatsapp className="contact__option-icon" />
